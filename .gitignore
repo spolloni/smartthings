@@ -1,5 +1,4 @@
 .DS_Store
 temp
-config.json
 node_modules
 plugins
