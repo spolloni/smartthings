@@ -35,7 +35,7 @@ preferences {
   section("SmartThings Node Proxy") {
     input "proxyAddress", "text", title: "Proxy Address", description: "(ie. 192.168.1.10)", required: true
     input "proxyPort", "text", title: "Proxy Port", description: "(ie. 8080)", required: true, defaultValue: "8080"
-    input "authCode", "password", title: "Auth Code", description: "", required: true, defaultValue: "secret-key"
+    input "authCode", "password", title: "Auth Code", description: "", required: true, defaultValue: "topsecret"
   }
   section("Monoprice Controller") {
     input "enableDiscovery", "bool", title: "Discover Zones (WARNING: all existing zones will be removed)", required: false, defaultValue: false

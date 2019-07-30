@@ -38,7 +38,7 @@ def page1() {
     section("SmartThings Node Proxy") {
       input "proxyAddress", "text", title: "Proxy Address", description: "(ie. 192.168.1.10)", required: true
       input "proxyPort", "text", title: "Proxy Port", description: "(ie. 8080)", required: true, defaultValue: "8080"
-      input "authCode", "password", title: "Auth Code", description: "", required: true, defaultValue: "secret-key"
+      input "authCode", "password", title: "Auth Code", description: "", required: true, defaultValue: "topsecret"
     }
     section("Honeywell Panel") {
       input name: "pluginType", type: "enum", title: "Plugin Type", required: true, submitOnChange: true, options: ["envisalink", "ad2usb"]
