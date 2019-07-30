@@ -1,13 +1,12 @@
 {
-  // SmartThings Node Proxy (required)
-  "port": 8080,                   // STNP service port
-  "authCode": "topsecret",       // Set the auth code to access STNP
+  "port": 8080,                   
+  "authCode": "topsecret",       
 
-  // Russound RNET
+  
   "rnet": {
-    "c-series": false,            // For CAV/CAM/CAA set to false; for MCA-C4/C5 set to true
-    "serialPort": "/dev/usbser",  // RS-232 port connected to Russound controller
-    "sources": [                  // Set this to define sources
+    "c-series": false,            
+    "serialPort": "/dev/usbser",  
+    "sources": [                  
       "Sonos",
       "Airplay",
       "Apple TV",
@@ -15,7 +14,7 @@
       "Source 5",
       "Source 6"
     ],
-    "controllerConfig": {         // Set this to define zones
+    "controllerConfig": {         
       "type": "discover",
       "controllers": [{
         "controller": 0,
@@ -31,11 +30,11 @@
     }
   },
 
-  // Monoprice MPR-SG6Z
+  
   "mpr6z": {
-    "serialPort": "COM2",         // RS-232 port connected to Russound controller
+    "serialPort": "COM2",         
     "baudRate": 9600,
-    "sources": [                  // Set this to define sources
+    "sources": [                  
       "Sonos",
       "Airplay",
       "Apple TV",
@@ -43,7 +42,7 @@
       "Source 5",
       "Source 6"
     ],
-    "controllerConfig": {         // Set this to define zones
+    "controllerConfig": {         
       "type": "discover",
       "controllers": [{
         "controller": 1,
@@ -59,15 +58,15 @@
     }
   },
 
-  // Envisalink Vista TPI
+  
   "envisalink": {
-    "address": "192.168.1.11",    // Address of Envisalink Vista TPI
-    "port": "4025",               // Service port - default is 4025
-    "password": "user",           // Service password - default is user
-    "securityCode": "1234",       // Security code to arm/disarm the panel
-    "dumpZoneTimer": "0",         // Experimental: dump zone timers every X minutes
+    "address": "192.168.1.11",    
+    "port": "4025",               
+    "password": "user",           
+    "securityCode": "1234",       
+    "dumpZoneTimer": "0",         
 
-    "panelConfig": {              // Set this to manual define partitions and zones
+    "panelConfig": {              
       "type": "discover",
       "partitions": [
         {"partition": 1, "name": "Security Panel"}
@@ -81,19 +80,17 @@
       ]
     }
   },
-
-  // AlarmDecoder AD2USB
   "ad2usb": {
-    "mode": "serial",             // Set this to serial OR ip
-    "securityCode": "1234",       // Security code to arm/disarm the panel
-    "clearFaults": true,          // Experimental automatically clear faults by sending *
+    "mode": "serial",             
+    "securityCode": "1234",       
+    "clearFaults": true,          
 
-    "serialPort": "COM2",         // ONLY USE WHEN MODE=SERIAL - RS-232 port connected to AD2USB
+    "serialPort": "COM2",         
 
-    "address": "192.168.2.22",    // ONLY USE WHEN MODE=IP - IP address of ser2sock connected to AD2USB
-    "port": "9001",               // ONLY USE WHEN MODE=IP - IP port of ser2sock connected to AD2USB
+    "address": "192.168.2.22",    
+    "port": "9001",               
 
-    "panelConfig": {              // Set this to manual define partitions and zones
+    "panelConfig": {              
       "type": "discover",
       "partitions": [
         {"partition": 1, "name": "Security Panel"}
@@ -108,14 +105,14 @@
     }
   },
 
-  // Amazon Dash Button
+  
   "dash": {
     "buttons": ["aa:bb:cc:dd:ee:f1", "aa:bb:cc:dd:ee:f2"]
-  }
+  },
 
-  // SmartThings Hub (optional - will be set by SmartThings SmartApp)
+  
   "notify": {
-    "address": "192.168.1.12",    // SmartThings Hub IP
-    "port": "39500"               // SmartThings Hub HTTP NOTIFY port - default is 39500
+    "address": "192.168.1.12",    
+    "port": "39500"               
   }
 }
