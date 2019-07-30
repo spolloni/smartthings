@@ -1,7 +1,7 @@
 {
   // SmartThings Node Proxy (required)
   "port": 8080,                   // STNP service port
-  "authCode": "secret-key",       // Set the auth code to access STNP
+  "authCode": "topsecret",       // Set the auth code to access STNP
 
   // Russound RNET
   "rnet": {
