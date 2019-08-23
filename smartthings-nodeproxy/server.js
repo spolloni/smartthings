@@ -40,12 +40,12 @@ app.use(function (req, res, next) {
   logger(req.ip+' '+req.method+' '+req.url);
 
   var headers = req.headers;
-  if (!headers['stnp-auth'] ||
-    headers['stnp-auth'] != nconf.get('authCode')) {
-    logger('Authentication error');
-    res.status(500).json({ error: 'Authentication error' });
-    return;
-  }
+  // if (!headers['stnp-auth'] ||
+  //   headers['stnp-auth'] != nconf.get('authCode')) {
+  //   logger('Authentication error');
+  //   res.status(500).json({ error: 'Authentication error' });
+  //   return;
+  // }
 
   next();
 });
